@@ -203,7 +203,6 @@ abstract class Handler {
 		wp_register_style( $name, plugins_url( 'build/' . $css_file, $plugin ), [], $version );
 		wp_enqueue_style( $name );
 
-
 		wp_localize_script( $name, 'wpBlocksEverywhere', $settings );
 	}
 
